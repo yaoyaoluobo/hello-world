@@ -81,6 +81,12 @@ div.tab button.active {
     <p><span style="display: inline-block; width: 300px;">M.SC. in Transport Planning</span> <span style="display: inline-block; width: 130px;"> 2012-2013</span> University of Leeds</a> </p>
     <p><span style="display: inline-block; width: 300px;">M.CD. in Town and Regional Planning</span> <span style="display: inline-block; width: 130px;"> 2010-2011</span> University of Liverpool</a> </p>
 	  <p><span style="display: inline-block; width: 300px;">B.E. in Town Planning</span> <span style="display: inline-block; width: 130px;"> 2005-2010</span> Beijing University of Civil Engineering and Architecture</a> </p>
+  
+<head>    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">    <meta charset="utf-8">    <title>Bakery Shop</title>    <style>      /* Always set the map height explicitly to define the size of the div       * element that contains the map. */      #map {        height: 500px;  width:700px;      }      /* Optional: Makes the sample page fill the window. */      html, body {        height: 500px;  width:700px;        margin: 10px;        padding: 0;      }    </style>  </head>  <body>    <div id="map"></div>    <script>
+      function initMap() {        var myLatLng = {lat: 53.807460, lng: -1.560430};
+        var map = new google.maps.Map(document.getElementById('map'), {          zoom: 17,          center: myLatLng        });
+        var marker = new google.maps.Marker({          position: myLatLng,          map: map,          title: 'Hello World!'        });      }    </script>    <script async defer    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBrYirkhkIUbnK9WEKubB6adYV5dlH5VcU &callback=initMap">    </script>  </body>
+
   </div>
 </div>
 
